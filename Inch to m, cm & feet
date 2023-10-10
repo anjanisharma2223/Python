@@ -1,0 +1,11 @@
+Take a decimal value from the user which will be the inch value
+    - convert that inch into meter
+    - Centimentor
+    - Feet size and print all the three value
+
+
+
+num=float(input("Enter value of inch: "))
+print(f"{round(num*0.0254,1)} meter")
+print(f"{round(num*2.54,1)} centimeter")
+print(f"{round(num/12,1)} feet")
