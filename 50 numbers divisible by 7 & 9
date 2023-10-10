@@ -1,0 +1,10 @@
+Find the first 50 number which are divisible by 7 & 9 together
+
+
+count=0
+num=1
+while(count<50):
+    if(num%7==0 and num%9==0):
+        print(num)
+        count+=1
+    num+=1
