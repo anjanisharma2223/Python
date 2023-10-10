@@ -1,0 +1,10 @@
+Find the total occurrence of each vowel in the given string
+
+
+
+ip=input("Enter a string: ").lower()
+vowel={'a':0,'e':0,'i':0,'o':0,'u':0}
+for char in ip:
+    if char in vowel:
+        vowel[char]+=1
+print(vowel)
