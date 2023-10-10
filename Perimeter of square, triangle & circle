@@ -1,0 +1,27 @@
+Take a input from the user for choice
+    - If input is 1 then take the data to find the
+        parimeter of the square
+    - If input is 2 then take the data to find the
+        parimeter of the traiangle
+    - If input is 3 then take the data to find the
+        parimeter and area of the circle
+
+
+from math import pi
+ip=int(input("Enter your Choice: "))
+if(ip==1):
+    a=float(input("Enter side of square: " ))
+    perimeter=4*a
+    print("Perimeter of square= ",perimeter)
+elif(ip==2):
+    s1=float(input("Enter length of side 1 of triangle: "))
+    s2=float(input("Enter length of side 2 of triangle: "))
+    s3=float(input("Enter length of side 3 of triangle: "))
+    perimeter=s1+s2+s3
+    print("Perimeter of triangle= ",perimeter)
+elif(ip==3):
+    r=float(input("Enter radius of circle: "))
+    perimeter=round(2*pi*r,2)
+    area=round(pi*r*r,2)
+    print("Perimeter of circle= ",perimeter)
+    print("Area of circle= ",area)
