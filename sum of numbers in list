@@ -1,0 +1,9 @@
+Take a list of number if the data is integer type or float type then get the total sum of number from the list only in integer datatype
+
+
+ip=[1,2,3,2,5.9,5,'a',2,'b']
+tsum=0
+for num in ip:
+    if(type(num)==float or type(num)==int):
+        tsum+=int(num)
+print(tsum)
