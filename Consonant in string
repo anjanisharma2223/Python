@@ -1,0 +1,10 @@
+Take a string input from the user and find the total number of consonant in the given string
+
+
+
+ip=input("Enter a string: ")
+count=0
+for char in ip:
+    if(char not in "AEIOUaeiou"):
+        count+=1
+print(count)
