@@ -1,0 +1,15 @@
+Take input from the user check if a number is int type or not
+    if int type then check whether that number is a leap year
+    number or not
+
+
+
+num=input("Enter a number: ")
+if(num.isdigit()):
+    num=int(num)
+    if((num%100==0 and num%400==0) or (num%100!=0 and num%4==0)):
+        print("Number is leap year")
+    else:
+        print("Number is not leap year")
+else:
+    print("Number is not interger")
