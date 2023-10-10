@@ -1,0 +1,28 @@
+Take a input from the user and check the input based on the following condition
+- input should have a minimum of 1 capital letter
+- input should have a minimum of 1 smaller  letter from j to "t"
+- input should have a minimum of 1 number
+- input should have a minimum of 1 special character like "# @ $"
+- input should have a minimum length of 5 character upto 15 character
+- It all the condition are satisfied then print the condition are valid
+   otherwise print any of the condition is not valid
+
+
+
+ip=input("Enter something: ")
+a=b=c=d=e=0
+if(5<=len(ip)<=15):
+    e=1
+    for char in ip:
+        if(65<=ord(char)<=90):
+            a+=1
+        if('j'<=char<='t'):
+            b+=1
+        if('0'<=char<='9'):
+            c+=1
+        if(char in ['#','@','$']):
+            d+=1
+if(a==0 or b==0 or c==0 or d==0 or e==0):
+    print("Any of condition is not valid")
+else:
+    print("Condition are valid")
