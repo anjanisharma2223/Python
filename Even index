@@ -1,0 +1,7 @@
+Take a string from the user and print the data which is present on the even index position
+
+
+
+string=input("Enter a string: ")
+for i in range(0,len(string),2):
+    print(string[i],end=' ')
